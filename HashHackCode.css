@@ -1,0 +1,120 @@
+/* css for task 1 */
+  body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.div{
+  align-items: center;
+  margin-left: 40%;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.rect {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 100px 0px 100px 0px;
+    opacity: 0.70;
+    transform-origin: center;
+    z-index: 1;
+    margin-top: 75px;
+    margin-bottom: 20px;
+  }
+  
+  /* First rectangle: Red, rotated by 0 degrees */
+  .rect-1 {
+  z-index: 100;
+  background:linear-gradient(to right,#0206f7,#A6556B);
+  transform: rotate(45deg);
+}
+
+/* Second rectangle: Blue, rotated by 90 degrees */
+.rect-2 {
+  z-index: 97;
+  background:linear-gradient(to right,#f191f8,#0206f7);
+  transform: rotate(90deg);
+}
+
+/* Third rectangle: Yellow, rotated by 180 degrees */
+.rect-3 {
+  z-index: 98;
+  background:linear-gradient(to right,#ff893b,#ffd900);
+  transform: rotate(135deg);
+}
+
+/* Fourth rectangle: Green, rotated by 270 degrees */
+.rect-4 {
+  z-index: 99;
+  background:linear-gradient(to right,#f70a01,#e68ed2);
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+/* css for task 2 */
+.box {
+    width:250px;
+    height:250px;
+    display:inline-flex;
+    background:conic-gradient(#e9e9e9 90deg,#18294e 0 180deg,#8292a2 0 270deg,#911603 0);
+    
+
+  }
+  .box::before {
+    content:"";
+    width:50%;
+    height:50%;
+    margin:auto;
+    background:inherit;
+    border-radius:50%;
+    transform:rotate(-90deg);
+    -webkit-mask: radial-gradient(50% 50%,#E9E9E9 98%,#0000) -62.9px -62.9px;
+  }
+
+
+/* css for task three */
+
+  table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-top: 25px;
+  }
+
+  th{
+    background-color:#434348;
+    color:white;
+    border: 1px solid white;
+    font-size: small;
+  }
+  td {
+    border: 1px solid white;
+    padding: 1px;
+    text-align: left;
+    font-size: small;
+  }
+  
+  .department-header {
+    background-color: #a1ccff;
+  }
+  
+  .sales-header {
+    background-color: #c1faf4;
+  }
+  
+  .product-header {
+    background-color: #F3A0E5;
+  }
+
